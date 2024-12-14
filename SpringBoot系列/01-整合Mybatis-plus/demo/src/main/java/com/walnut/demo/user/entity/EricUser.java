@@ -23,5 +23,15 @@ public class EricUser implements Serializable {
      */
     private String name;
 
+    /**
+     * 年龄
+     */
+    private Integer age;
+
+    /**
+     * 国籍
+     */
+    private String nationality;
+
 
 }

@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: demo
+  profiles:
+    include:
+      - knife4j
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/study?useUnicode=true&useSSL=false&characterEncoding=utf8
