@@ -55,29 +55,7 @@ public class EricUserController {
     }
 
 
-    @PostMapping("/remove")
-    @ApiOperation(value = "根据条件删除用户")
-    public Boolean remove(@RequestBody Wrapper<EricUser> queryWrapper){
-        return ericUserService.remove(queryWrapper);
-    }
 
-    @PostMapping("/removeById")
-    @ApiOperation(value = "根据ID删除用户")
-    public Boolean removeById(@RequestBody Serializable id){
-        return ericUserService.removeById(id);
-    }
-
-    @PostMapping("/removeByMap")
-    @ApiOperation(value = "根据columnMap条件删除用户")
-    public Boolean removeByMap(@RequestBody Map<String, Object> columnMap){
-        return ericUserService.removeByMap(columnMap);
-    }
-
-    @PostMapping("/removeByIds")
-    @ApiOperation(value = "根据ID批量删除用户")
-    public Boolean removeByIds(@RequestBody Collection<? extends Serializable> idList){
-        return ericUserService.removeByIds(idList);
-    }
 
 
 
